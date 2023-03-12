@@ -81,10 +81,8 @@ public class Findplayer {
 			for (int i = 0; i < photo.length; i++) {
 				for (int j = 0; j < photo[0].length(); j++) {
 
-					if (Character.getNumericValue(photo[i].charAt(j)) == team) {// photo[i].charAt(j)// in compare only
-																				// to be come valiade photo[i] =
-																				// photo[i].substring(0,j) + '*' +
-																				// photo[i].substring(j+1);
+					if (Character.getNumericValue(photo[i].charAt(j)) == team) {// photo[i].charAt(j)// in compare only									// to be come valiade photo[i] =
+					 photo[i].substring(0,j) + '*' + photo[i].substring(j+1);
 						this.currentPlayerArea++;
 						element[0] = element[1] = j;// let x1,x2==j
 						element[2] = element[3] = i;// let y1,y2==i
